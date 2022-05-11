@@ -47,6 +47,7 @@ jobs:
     - name: Install requirements
       working-directory: ./hexo_circle_of_friends
       run: |
+        git pull 
         pip install -r requirements.txt
 
     - name: leancloud Update posts # leancloud
@@ -69,6 +70,7 @@ jobs:
         MYSQL_DB: ${{ secrets.MYSQL_DB }}
       working-directory: ./hexo_circle_of_friends
       run: |
+        git --bare init
         python run.py
 
     - name: sqlite Update posts # sqlite
