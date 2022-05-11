@@ -45,6 +45,7 @@ SETTINGS_FRIENDS_LINKS = {
     "list": [
         # 示例1：
         ["猪猪的作品集", "https://blog.learnonly.xyz/", "https://pighog.vercel.app/img/0.jpg"],
+        ["猪猪的作品集", "https://icodeq.com/", "https://ik.imagekit.io/zkeq/Avatar.jpg"],
         # 示例2：使用suffix的配置如下
         # 程序目前自动获取 "atom.xml", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml" 这些后缀
         # 如果目标地址的后缀不在其中，就可以在这里添加
@@ -83,7 +84,7 @@ BLOCK_SITE = [
 HTTP_PROXY = False
 
 # 过期文章清除（天）
-OUTDATE_CLEAN = 60
+OUTDATE_CLEAN = 90
 
 # 存储方式，可选项：leancloud，mysql，sqlite，mongodb；默认为leancloud
 DATABASE = "sqlite"
