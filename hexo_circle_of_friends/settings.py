@@ -21,7 +21,7 @@ LINK = [
         "theme": "butterfly"
     },
     {
-        "link": "https://pighog.vercel.app/",  # 友链页地址1，修改为你的友链页地址
+        "link": "https://blog.learnonly.xyz/",  # 友链页地址1，修改为你的友链页地址
         "theme": "butterfly"
     },
     #     {
@@ -44,7 +44,7 @@ SETTINGS_FRIENDS_LINKS = {
     "json_api": "",
     "list": [
         # 示例1：
-        ["我的作品集", "https://pighog.vercel.app/", "https://pighog.vercel.app/img/0.jpg"],
+        ["猪猪的作品集", "https://blog.learnonly.xyz/", "https://pighog.vercel.app/img/0.jpg"],
         # 示例2：使用suffix的配置如下
         # 程序目前自动获取 "atom.xml", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml" 这些后缀
         # 如果目标地址的后缀不在其中，就可以在这里添加
