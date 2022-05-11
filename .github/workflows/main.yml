@@ -82,15 +82,14 @@ jobs:
 
     - name: Push sqlite data # sqlite push
       if: ${{ env.STORAGE_TYPE == 'sqlite' }}
-      run: |
-        git config --global user.email 550029691@qq.com
-        git config --global user.name valetzx
-        git add data.db
-        git commit -m "update new db" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+      uses: github-actions-x/commit@v2.9
       with:
-        github_token: ${{ secrets.GH_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Update data.db"
+        files: data.db
+        rebase: 'true'
+        name: ${{ env.GITHUB_NAME }}
+        email: ${{ env.GITHUB_EMAIL }}
 
     - name: mongodb Update posts # mongodb
       if: ${{ env.STORAGE_TYPE == 'mongodb' }}
