@@ -20,10 +20,10 @@ LINK = [
         "link": "https://allblog.vercel.app/article/01VC3T5Y4ARASMKEVT3FFLQILXRKFSV2BA",  # 友链页地址1，修改为你的友链页地址
         "theme": "butterfly"
     },
-    #     {
-    #     "link": "https://noionion.top/link/",  # 友链页地址2
-    #     "theme": "butterfly",  # 友链页的获取策略
-    # },
+    {
+        "link": "https://pighog.vercel.app/",  # 友链页地址1，修改为你的友链页地址
+        "theme": "butterfly"
+    },
     #     {
     #     "link": "https://immmmm.com/about/",  # 友链页地址3
     #     "theme": "common",  # 友链页的获取策略
@@ -40,10 +40,11 @@ LINK = [
 #       avatar：必填，头像地址
 #       suffix：选填，自定义订阅后缀，主要针对不规范的网站订阅后缀，见示例2
 SETTINGS_FRIENDS_LINKS = {
-    "enable": False,
+    "enable": True,
     "json_api": "",
     "list": [
         # 示例1：
+        ["我的作品集", "https://pighog.vercel.app/", "https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg"],
         ["贰猹の小窝", "https://noionion.top/", "https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg"],
         ["Akilarの糖果屋", "https://akilar.top/", "https://akilar.top/images/headimage.png"],
         # 示例2：使用suffix的配置如下
